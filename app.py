@@ -7,7 +7,7 @@ st.header('Analisis de venta de vehiculos usados en EEUU')
 
 vehicles_data = pd.read_csv('vehicles_us.csv')
 
-#Primer boton
+#Primer botón
 
 hist_button = st.button('Construir histograma')
 
@@ -19,7 +19,7 @@ if hist_button:
 
     st.plotly_chart(car_chart3, use_container_width=True)
 
-#Segundo Boton
+#Segundo Botón
 
 hist_button = st.button('Construir evolución de precios')
 
