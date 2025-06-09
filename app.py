@@ -36,7 +36,7 @@ if hist_button:
 build_lineplot = st.checkbox('Construir días promedio enlistado')
 
 if build_lineplot: 
-    st.write('Creación de la gráfica con la informacion de los días promedio enlistado por tipo de vehiculo y color')
+    st.write('Creación de la gráfica de disperción con la informacion de los días promedio enlistado por tipo de vehiculo y color')
     
     car_chart2 = px.scatter(vehicles_data, x="type", y="paint_color", color='days_listed', color_continuous_scale=px.colors.sequential.Viridis)
     car_chart2.show()
