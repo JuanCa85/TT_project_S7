@@ -14,7 +14,7 @@ hist_button = st.button('Construir histograma')
 if hist_button:
     st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
 
-    car_chart3 = px.scatter(vehicles_data, x="odometer", y="price", color_discrete_sequence=px.colors.qualitative.Set1) 
+    car_chart3 = px.histogram(vehicles_data, x="odometer", y="price", color_discrete_sequence=px.colors.qualitative.Set1) 
     car_chart3.show()
 
     st.plotly_chart(car_chart3, use_container_width=True)
