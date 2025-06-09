@@ -29,7 +29,7 @@ if hist_button:
     car_chart = px.line(vehicles_data, x='model_year', y='price', color='condition', color_discrete_sequence=px.colors.qualitative.Set1)
     car_chart.show()
 
-    st.plotly_chart(chart_cars, use_container_width=True)
+    st.plotly_chart(car_chart, use_container_width=True)
 
 #Primer Check list
 
@@ -41,4 +41,4 @@ if build_lineplot:
     car_chart2 = px.scatter(vehicles_data, x="type", y="paint_color", color='days_listed', color_continuous_scale=px.colors.sequential.Viridis)
     car_chart2.show()
 
-    st.plotly_chart(chart_cars, use_container_width=True)
+    st.plotly_chart(car_chart2, use_container_width=True)
