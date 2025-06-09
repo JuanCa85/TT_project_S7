@@ -5,6 +5,8 @@ import sys
 
 st.header('Analisis de venta de vehiculos usados en EEUU')
 
+"""Las gráficas que a continuación se presentarán, nos ayudan a observar como se comparta este segmento del mercado de ventas de vehiculos y las cosas que pueden afectar o generar valor para hacer la venta."""
+
 vehicles_data = pd.read_csv('vehicles_us.csv')
 
 #Primer botón
